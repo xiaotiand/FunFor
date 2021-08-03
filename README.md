@@ -9,6 +9,7 @@ The package can be installed by running:
 Then run 
 
 > library(FunFor)
+> 
 > ?FunFor
 
 to get an example.
