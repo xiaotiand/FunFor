@@ -14,6 +14,8 @@ Then run
 
 to get an example.
 
+Also, see ?optimal_size for how to determine the optimal size of a tree fit. See ?predict.mvRF for how to predict from new observations based on a fitted FunFor model.
+
 The typical running time of a FunFor model on data with sample size n=100, number of scalar predictors p=100, and length of functional curves T=100 is about 276s (4.6min).
 
 > system.time(FunFor(formula, data, mtry = 40, ntree = 10, npc = 3, m_split = 10))
