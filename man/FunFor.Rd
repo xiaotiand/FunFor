@@ -36,6 +36,12 @@ FunFor(
 \description{
 This is the main function for functional forest.
 }
+\details{
+The FunFor algorithm is able to predict curve responses for new observations and 
+select important variables from a large set of scalar predictors. see ?optimal_size 
+for how to determine the optimal size of a tree fit. See ?predict.mvRF for how to 
+predict from new observations based on a fitted FunFor model.
+}
 \examples{
 library(MASS)
 nbx = 100

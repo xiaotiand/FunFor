@@ -14,6 +14,10 @@
 \description{
 This function is to make predictions based on a FunFor fit.
 }
+\details{
+This function is used to predict from new observations based on a fitted FunFor model.
+See ?FunFor for examples of how to fit a FunFit model.
+}
 \examples{
 predict(funfor_fit, newX)
 }

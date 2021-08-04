@@ -35,6 +35,9 @@ mise = function(vec) {
 #' Selecting an optimal tree size
 #'
 #' This function is to find a optimal tree size
+#' @details 
+#' This function is used to determine the optimal size of a tree fit.
+#' See ?FunFor, the main function, for example.
 #' @param formula Formula of model fitted
 #' @param data All the data
 #' @param npc Number of PCs
@@ -292,6 +295,11 @@ predict.mvTree = function(fit, newdata) {
 #' @param npc A given number of PCs when smoothing
 #' @param m_split Optimal tree size
 #' @param smooth Whether to smooth curves
+#' @details 
+#' The FunFor algorithm is able to predict curve responses for new observations and 
+#' select important variables from a large set of scalar predictors. see ?optimal_size 
+#' for how to determine the optimal size of a tree fit. See ?predict.mvRF for how to 
+#' predict from new observations based on a fitted FunFor model.
 #' @examples
 #' library(MASS)
 #' nbx = 100
@@ -371,6 +379,9 @@ FunFor = function(formula, data, mtry, ntree, importance = TRUE, npc = NULL, m_s
 #' Make predictions based on a FunFor fit
 #'
 #' This function is to make predictions based on a FunFor fit.
+#' @details
+#' This function is used to predict from new observations based on a fitted FunFor model.
+#' See ?FunFor for examples of how to fit a FunFit model.
 #' @param fit Saved FunFor object
 #' @param newdata A new X data matrix
 #' @examples

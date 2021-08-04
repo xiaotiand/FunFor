@@ -20,3 +20,7 @@ optimal_size(formula, data, npc = NULL, n_folds = 5)
 \description{
 This function is to find a optimal tree size
 }
+\details{
+This function is used to determine the optimal size of a tree fit.
+See ?FunFor, the main function, for example.
+}
