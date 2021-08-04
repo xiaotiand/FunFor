@@ -42,7 +42,8 @@ mise = function(vec) {
 #' @param data All the data
 #' @param npc Number of PCs
 #' @param n_folds Number of folds in cross-validation
-#' @param examples
+#' @return An integer for optimal tree size.
+#' @examples
 #' optimal_size(Y ~ ., data)
 
 optimal_size = function(formula, data, npc = NULL, n_folds = 5) {
@@ -295,6 +296,8 @@ predict.mvTree = function(fit, newdata) {
 #' @param npc A given number of PCs when smoothing
 #' @param m_split Optimal tree size
 #' @param smooth Whether to smooth curves
+#' @return imp Importance measures for the candidate predictors
+#' @return fits A list of the fitted trees. Will be used to make predictions.
 #' @details 
 #' The FunFor algorithm is able to predict curve responses for new observations and 
 #' select important variables from a large set of scalar predictors. see ?optimal_size 
@@ -384,6 +387,7 @@ FunFor = function(formula, data, mtry, ntree, importance = TRUE, npc = NULL, m_s
 #' See ?FunFor for examples of how to fit a FunFit model.
 #' @param fit Saved FunFor object
 #' @param newdata A new X data matrix
+#' @return A matrix of predicted Y values.
 #' @examples
 #' predict(funfor_fit, newX)
 

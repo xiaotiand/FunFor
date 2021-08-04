@@ -14,8 +14,9 @@ optimal_size(formula, data, npc = NULL, n_folds = 5)
 \item{npc}{Number of PCs}
 
 \item{n_folds}{Number of folds in cross-validation}
-
-\item{examples}{optimal_size(Y ~ ., data)}
+}
+\value{
+An integer for optimal tree size.
 }
 \description{
 This function is to find a optimal tree size
@@ -23,4 +24,7 @@ This function is to find a optimal tree size
 \details{
 This function is used to determine the optimal size of a tree fit.
 See ?FunFor, the main function, for example.
+}
+\examples{
+optimal_size(Y ~ ., data)
 }

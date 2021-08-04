@@ -11,6 +11,9 @@
 
 \item{newdata}{A new X data matrix}
 }
+\value{
+A matrix of predicted Y values.
+}
 \description{
 This function is to make predictions based on a FunFor fit.
 }

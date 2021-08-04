@@ -33,6 +33,11 @@ FunFor(
 
 \item{smooth}{Whether to smooth curves}
 }
+\value{
+imp Importance measures for the candidate predictors
+
+fits A list of the fitted trees. Will be used to make predictions.
+}
 \description{
 This is the main function for functional forest.
 }
