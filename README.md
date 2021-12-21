@@ -25,5 +25,5 @@ The typical running time of a FunFor model on data with sample size n=100, numbe
 > 272.636   2.296 275.159
 
 Citations:
-To be added
 
+Fu, G., Dai, X., & Liang, Y. (2021). Functional random forests for curve response. Scientific Reports, 11(1), 1-14.
